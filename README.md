@@ -8,7 +8,7 @@
 
 ## Notes
 
-- If you haven't used imports in JavaScript before, take a look at the [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import). You will need to find out how to import the `pokemonArray` from the `pokemon.ts` file into the `script.ts` file
+- If you haven't used imports in JavaScript before, take a look at the [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import). You will need to find out how to import the `pokemonArray` from the `pokemon.ts` file into the `main.ts` file
 - Look at the SCSS file for clues to what the HTML cards should look like
 - We're looking for clean code here, make sure you remove extra console.logs and commented code, and remember to format your code!
 
