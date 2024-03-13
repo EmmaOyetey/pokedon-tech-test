@@ -8,7 +8,7 @@ if (!pokemonContainer)
 throw new Error ("couldn't get the details about the pokemon");
 
 
-const handleRender = () => {
+//const handleRender = () => {
 pokemonContainer.innerHTML = "";
 pokemonArray.forEach((pokemon) : void => {
     const typesString = pokemon.types.join(" & ");
@@ -20,32 +20,32 @@ pokemonArray.forEach((pokemon) : void => {
 
 </div>`
 });
-};
+//};
 
-let filteredPokemon =[...pokemonArray]
+//let filteredPokemon =[...pokemonArray]
 
-const filterInput =
+//const filterInput =
 
-document.querySelector<HTMLInputElement>("#filter-pokemonArray");
+//document.querySelector<HTMLInputElement>("#filter-pokemonArray");
 
-if(!filterInput) {throw new Error ("filter not working")}
+//if(!filterInput) {throw new Error ("filter not working")}
 
-const handleFilter = (event : Event) => {
-    const userInput = (
-        event.currentTarget as HTMLInputElement).value.toLowerCase();
+//const handleFilter = (event : Event) => {
+//    const userInput = (
+//        event.currentTarget as HTMLInputElement).value.toLowerCase();
 
-        filteredPokemon = pokemonArray.filter((pokemon) => {
-            return (
-                pokemon.name.toLowerCase().includes(userInput)
-            );
-        });
+//        filteredPokemon = pokemonArray.filter((pokemon) => {
+//            return (
+//                pokemon.name.toLowerCase().includes(userInput)
+ //           );
+//         });
 
-        handleRender();
-};
+//         handleRender();
+// };
 
-filterInput.addEventListener("input", handleFilter);
+// filterInput.addEventListener("input", handleFilter);
 
-handleRender();
+ //handleRender();
 
 
 
