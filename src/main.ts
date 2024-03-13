@@ -36,7 +36,7 @@ const handleFilter = (event : Event) => {
 
         filteredPokemon = pokemonArray.filter((pokemon) => {
             return (
-                pokemon.name.toLowerCase().startsWith(userInput)
+                pokemon.name.toLowerCase().includes(userInput)
             );
         });
 
@@ -44,6 +44,8 @@ const handleFilter = (event : Event) => {
 };
 
 filterInput.addEventListener("input", handleFilter);
+
+handleRender();
 
 
 
