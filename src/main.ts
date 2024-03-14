@@ -8,9 +8,9 @@ if (!pokemonContainer)
 throw new Error ("couldn't get the details about the pokemon");
 
 
-//const handleRender = () => {
+const handleRender = () => {
 pokemonContainer.innerHTML = "";
-pokemonArray.forEach((pokemon) : void => {
+pokemonArray.forEach((pokemon) => {
     const typesString = pokemon.types.join(" & ");
     pokemonContainer.innerHTML += 
     `<div>
@@ -20,7 +20,7 @@ pokemonArray.forEach((pokemon) : void => {
 
 </div>`
 });
-//};
+};
 
 //let filteredPokemon =[...pokemonArray]
 
@@ -45,7 +45,7 @@ pokemonArray.forEach((pokemon) : void => {
 
 // filterInput.addEventListener("input", handleFilter);
 
- //handleRender();
+ handleRender();
 
 
 
